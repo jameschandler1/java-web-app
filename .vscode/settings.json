@@ -1,0 +1,11 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "maven.view": "flat",
+  "java.project.sourcePaths": [
+    "src",
+    "resources",
+    "WebContent",
+    "META-INF",
+    "db"
+  ]
+}
