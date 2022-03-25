@@ -1,16 +1,14 @@
-<settings>
-  <servers>
-    <server>
-      <id>psms-snapshots</id>
-      <username>admin</username>
-      <password>admin123</password>
+<server>
+        <id>github</id>
+        <username>jameschandler1</username>
+        <password>ICAyNGYyMzAzeGJsM1gxV2RiM3RuQWw0SE9ad1B3</password>
+        <configuration>
+            <httpHeaders>
+                <property>
+                    <name>Authorization</name>
+                    <!-- Base64-encoded "<username>:<password>" -->
+                    <value>jameschandler1:ICAyNGYyMzAzeGJsM1gxV2RiM3RuQWw0SE9ad1B3</value>
+                </property>
+            </httpHeaders>
+        </configuration>
     </server>
-  </servers>
-   <servers>
-    <server>
-      <id>psms-releases</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-  </servers>
-</settings>

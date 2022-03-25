@@ -12,7 +12,7 @@
   <name>psms</name>
 
   <!-- FIXME change it to the project's website -->
-  <url>http://www.l3practicehandson.com</url>
+  <url>http://localhost:8080</url>
 
   <distributionManagement>
  
@@ -41,12 +41,22 @@
   </properties>
 
   <dependencies>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-tools</artifactId>
+      <version>2.2.13.RELEASE</version>
+      <type>pom</type>
+    </dependency>
+
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat</artifactId>
       <version>10.1.0-M12</version>
       <type>pom</type>
     </dependency>
+
+    
 
     <dependency>
       <groupId>org.apache.maven</groupId>
