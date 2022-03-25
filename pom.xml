@@ -15,24 +15,21 @@
   <url>http://www.l3practicehandson.com</url>
 
   <distributionManagement>
-    <snapshotRepository>
-            <id>nexus-snapshots</id>
-            <name>Snapshots</name>
-            <snapshots>
-              <enabled>true</enabled>
-              <updatePolicy>never</updatePolicy>
-            <checksumPolicy>fail</checksumPolicy>
-            </snapshots>
-            <url>http://www.example.com/repository/maven-snapshots/</url>
-  </snapshotRepository>
-          <repository>
-            <id>nexus-releases</id>
-            <name>Releases</name>
-            <snapshots>
-              <enabled>false</enabled>
-            </snapshots>
-            <url>http://www.example.com/repository/maven-releases/</url>
-          </repository>
+ 
+    <!-- Repositories -->
+    <repository>
+        <id>github</id>
+        <url>https://github.com/jameschandler1/java-web-app</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+        <releases>
+            <enabled>true</enabled>
+            <updatePolicy>never</updatePolicy>
+        </releases>
+    </repository>
+
   </distributionManagement>
 
 
