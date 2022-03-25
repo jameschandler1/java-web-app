@@ -1,0 +1,16 @@
+<settings>
+  <servers>
+    <server>
+      <id>psms-snapshots</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+   <servers>
+    <server>
+      <id>psms-releases</id>
+      <username>admin</username>
+      <password>admin123</password>
+    </server>
+  </servers>
+</settings>
