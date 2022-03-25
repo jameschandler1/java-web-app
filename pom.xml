@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="pom.xsd">
+<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.l3practicehandson.chandler</groupId>
+  <groupId>com.l3practicehandson.app</groupId>
   <artifactId>psms</artifactId>
   <version>1.0-SNAPSHOT</version>
-
+  <packaging>jar</packaging>
 
   <name>psms</name>
 
   <!-- FIXME change it to the project's website -->
-  <url>http://localhost:8080</url>
+  <url>http://localhost:8080/</url>
 
   <distributionManagement>
- 
+
+    
     <!-- Repositories -->
     <repository>
+      
         <id>github</id>
-        <url>https://github.com/jameschandler1/java-web-app</url>
+        <url>https://github.com/jameschandler1/java-web-app</url> 
         <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
@@ -40,58 +42,35 @@
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
+  <dependencyManagement>
+      
+  </dependencyManagement>
+
   <dependencies>
-
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-tools</artifactId>
-      <version>2.2.13.RELEASE</version>
-      <type>pom</type>
-    </dependency>
-
-    <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>tomcat</artifactId>
-      <version>10.1.0-M12</version>
-      <type>pom</type>
-    </dependency>
-
-    
-
-    <dependency>
-      <groupId>org.apache.maven</groupId>
-      <artifactId>maven</artifactId>
-      <version>3.8.5</version>
-      <type>pom</type>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-      <scope>provided</scope>
-    </dependency>
-    
-    <dependency>
-      <groupId>javax.servlet.jsp</groupId>
-      <artifactId>javax.servlet.jsp-api</artifactId>
-      <version>2.3.1</version>
-      <scope>provided</scope>
-    </dependency>
 
     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
-  
     </dependency>
+
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <version>2.3.3</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+    </dependency>
+
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>8.0.28</version>
     </dependency>
-  
-    
   </dependencies>
 
   <build>
@@ -109,26 +88,8 @@
                 <executable>/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/javac</executable>
             </configuration>
         </plugin>
-  
 </plugins>
+</build>
 
-
-  </build>
-
-
-  <dependencyManagement>
-  
-
-    <dependencies>
-    
-
-      <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-component-annotations</artifactId>
-        <version>2.1.1</version>
-      </dependency>
-
-    </dependencies>
-
-  </dependencyManagement>
+ 
 </project>

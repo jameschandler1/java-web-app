@@ -4,8 +4,12 @@
   "java.project.sourcePaths": [
     "src",
     "resources",
-    "WebContent",
     "META-INF",
-    "db"
+    "bin",
+    "WEB-INF",
+    "db",
+    "target",
+    "webapp",
+    "psms"
   ]
 }

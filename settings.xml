@@ -1,13 +1,14 @@
-<server>
+<server xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="settings.xsd">
         <id>github</id>
         <username>jameschandler1</username>
-        <password>ICAyNGYyMzAzeGJsM1gxV2RiM3RuQWw0SE9ad1B3</password>
+        <password>MjRmMjMwM3hibDNYMVdkYjN0bkFsNEhPWndQdw==</password>
         <configuration>
             <httpHeaders>
                 <property>
                     <name>Authorization</name>
                     <!-- Base64-encoded "<username>:<password>" -->
-                    <value>jameschandler1:ICAyNGYyMzAzeGJsM1gxV2RiM3RuQWw0SE9ad1B3</value>
+                    <value>jameschandler1:MjRmMjMwM3hibDNYMVdkYjN0bkFsNEhPWndQdw==</value>
                 </property>
             </httpHeaders>
         </configuration>
